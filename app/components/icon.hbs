@@ -1,0 +1,11 @@
+{{#let (component (concat
+    'inline-svg/'
+    (or @kind 'interface')
+    '/'
+    (if @set (concat @set '/') '')
+    @name
+  ))
+  as |InlineSvg|
+}}
+  <InlineSvg ...attributes/>
+{{/let}}
